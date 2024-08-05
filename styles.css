@@ -1,0 +1,116 @@
+/* CSS from the first <style> block */
+.header {
+    position: relative; /* Allows absolute positioning of the image */
+    width: 1270px;
+    height: 200px;
+    background-color: white; /* Adjust background color as needed */
+    color: black; /* Adjust text color as needed */
+    display: flex;
+    flex-direction: column; /* Stack headers vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid black; /* Optional border at the bottom */
+    box-sizing: border-box; /* Ensures border is included in the width and height */
+}
+.header-image {
+    position: absolute;
+    top: 10px; /* Adjust to fit your design */
+    left: 30px; /* Adjust to fit your design */
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensures the image is above other elements */
+}
+.title-large {
+    font-size: 36px; /* Large font size for the main title */
+    margin: 0; /* Remove default margin */
+}
+.title-medium {
+    font-size: 24px; /* Medium font size for the first sub-title */
+    margin: 0; /* Remove default margin */
+}
+.title-small {
+    font-size: 18px; /* Small font size for the second sub-title */
+    margin: 0; /* Remove default margin */
+}
+
+/* CSS from the second <style> block */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+.hero {
+    background-image: url('https://github.com/Akshaysai-code/Event/blob/main/header1.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.event-details {
+    margin: 20px 0;
+}
+.event-details h2 {
+    color: #e76f51;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.event-details p {
+    margin: 5px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2a9d8f;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #1f7a6d;
+}
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #777;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
